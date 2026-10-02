@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulir Pemesanan Tiket Konser</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background-color: white;
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            text-align: center;
+            color: #16213e;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+            outline: none;
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #0f3460;
+            box-shadow: 0 0 5px rgba(15, 52, 96, 0.3);
+        }
+
+        .ticket-option {
+            background-color: #f5f6fa;
+            padding: 12px;
+            margin: 8px 0;
+            border-radius: 8px;
+        }
+
+        .ticket-option label {
+            display: inline;
+            font-weight: normal;
+            margin-left: 5px;
+        }
+
+        .agreement {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            margin-bottom: 25px;
+        }
+
+        .agreement label {
+            display: inline;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        .submit-button {
+            width: 100%;
+            padding: 14px;
+            background-color: #0f3460;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            background-color: #16213e;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+            font-size: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1> CONSER MUSIC 2026</h1>
+
+        <p class="subtitle">
+            Formulir Pemesanan Tiket Konser
+        </p>
+
+        <form>
+
+            <!-- Nama Pemesan -->
+            <div class="form-group">
+                <label for="nama">Nama Pemesan</label>
+
+                <input type="text"
+                       id="nama"
+                       name="nama"
+                       placeholder="Masukkan nama lengkap"
+                       required>
+            </div>
+
+
+            <!-- Nomor Telepon -->
+            <div class="form-group">
+                <label for="telepon">Nomor Telepon</label>
+
+                <input type="number"
+                       id="telepon"
+                       name="telepon"
+                       placeholder="Masukkan nomor telepon"
+                       required>
+            </div>
+
+
+            <!-- Jumlah Tiket -->
+            <div class="form-group">
+                <label for="jumlah">Jumlah Tiket</label>
+
+                <input type="number"
+                       id="jumlah"
+                       name="jumlah"
+                       min="1"
+                       max="5"
+                       placeholder="1 - 5 tiket"
+                       required>
+            </div>
+
+
+            <!-- Tipe Tiket -->
+            <div class="form-group">
+
+                <label>Tipe Tiket</label>
+
+                <div class="ticket-option">
+                    <input type="radio"
+                           id="reguler"
+                           name="tipe_tiket"
+                           value="100000"
+                           required>
+
+                    <label for="reguler">
+                        Reguler — Rp 100.000
+                    </label>
+                </div>
+
+                <div class="ticket-option">
+                    <input type="radio"
+                           id="vip"
+                           name="tipe_tiket"
+                           value="250000">
+
+                    <label for="vip">
+                        VIP — Rp 250.000
+                    </label>
+                </div>
+
+                <div class="ticket-option">
+                    <input type="radio"
+                           id="vvip"
+                           name="tipe_tiket"
+                           value="500000">
+
+                    <label for="vvip">
+                        VVIP — Rp 500.000
+                    </label>
+                </div>
+
+            </div>
+
+
+            <!-- Metode Pembayaran -->
+            <div class="form-group">
+
+                <label for="pembayaran">
+                    Metode Pembayaran
+                </label>
+
+                <select id="pembayaran"
+                        name="pembayaran"
+                        required>
+
+                    <option value="">
+                        -- Pilih Metode Pembayaran --
+                    </option>
+
+                    <option value="transfer_bank">
+                        Transfer Bank
+                    </option>
+
+                    <option value="kartu_kredit">
+                        Kartu Kredit
+                    </option>
+
+                    <option value="e-wallet">
+                        E-Wallet
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Catatan Tambahan -->
+            <div class="form-group">
+
+                <label for="catatan">
+                    Catatan Tambahan
+                </label>
+
+                <textarea id="catatan"
+                          name="catatan"
+                          rows="5"
+                          placeholder="Tuliskan catatan tambahan..."></textarea>
+
+            </div>
+
+
+            <!-- Persetujuan -->
+            <div class="agreement">
+
+                <input type="checkbox"
+                       id="persetujuan"
+                       name="persetujuan"
+                       required>
+
+                <label for="persetujuan">
+                    Saya menyetujui syarat dan ketentuan yang berlaku.
+                </label>
+
+            </div>
+
+
+            <!-- Tombol Submit -->
+            <input type="submit"
+                   value="🎟️ Pesan Tiket"
+                   class="submit-button">
+
+        </form>
+
+
+        <div class="footer">
+            © 2026 CONSER MUSIC
+        </div>
+
+    </div>
+
+</body>
+</html>
+

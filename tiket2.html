@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <!-- H1 untuk Judul Utama Aplikasi -->
+    <h1>Pemesanan Tiket Kapal</h1>
+    <hr>
+
+    <form>
+        
+        <!-- H2 untuk Seksi Utama: Data Pemesan -->
+        <h2>Data Pemesan</h2>
+        
+        <div class="input-group">
+            <label>Nama Lengkap </label>
+            <input type="text"/>
+        </div>
+        
+        <div class="input-group">
+            <label>No. Handphone </label>
+            <input type="tel"/>
+        </div>
+        
+        <div class="input-group">
+            <label>Email </label>
+            <input type="email"/>
+        </div>
+
+
+        <hr>
+
+
+        <!-- H2 untuk Seksi Utama: Data Penumpang -->
+        <h2>Data Penumpang</h2>
+
+        <!-- H3 untuk Sub-Seksi: Penumpang ke-1 -->
+        <h3>Penumpang 1</h3>
+        
+        <div class="input-group">
+            <label>Panggilan</label>
+            <select>
+                <option>Tuan, Nyonya, Nona</option><br />
+                <option>Tuan</option>
+                <option>Nyonya</option>
+                <option>Nona</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Nama Lengkap (sesuai KTP/Paspor)</label>
+            <input type="text"/>
+        </div>
+
+        <div class="input-group">
+            <label>Jenis Identitas *</label>
+            <select required>
+                <option>KTP, Paspor, SIM</option><br/><br/>
+                <option>KTP</option>
+                <option>Paspor</option>
+                <option>SIM</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>No. Identitas</label>
+            <input type="text"/>
+        </div>
+
+        <div class="input-group">
+            <label>Tanggal Lahir</label>
+            <input type="date">
+        </div>
+
+
+        <!-- H3 untuk Sub-Seksi: Penumpang ke-2 -->
+        <h3>Penumpang 2</h3>
+        
+        <div class="input-group">
+            <label>Panggilan</label>
+            <select>
+                <option>Panggilan</option>
+                <option>Tuan</option>
+                <option>Nyonya</option>
+                <option>Nona</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Nama Lengkap</label>
+            <input type="text"/>
+        </div>
+
+        <div class="input-group">
+            <label>Jenis Identitas</label>
+            <select>
+                <option>KTP, Paspor, SIM</option>
+                <option>KTP</option>
+                <option>Paspor</option>
+                <option>SIM</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>No. Identitas</label>
+            <input type="text"/>
+        </div>
+
+        <div class="input-group">
+            <label>Tanggal Lahir</label>
+            <input type="date">
+        </div>
+
+
+        <hr>
+
+
+        <!-- Tombol Kirim Form -->
+        <div style="text-align: right;">
+            <button type="button" style="background: #e0e0e0; border: none; margin-right: 5px;">Kembali</button>
+            <button type="submit" style="background: #1e3a8a; color: white; border: none;">Lanjutkan</button>
+        </div>
+
+    </form>
+
+</body>
+</html>
+

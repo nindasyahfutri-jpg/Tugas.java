@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Me</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+            background: linear-gradient(135deg, #ffe6f2, #e8d9ff);
+        }
+
+        /* KOTAK UTAMA */
+        .container {
+            border: 2px solid #d63384;
+            min-height: 650px;
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        /* NAVBAR */
+        nav {
+            padding: 15px;
+            background: linear-gradient(90deg, #d63384, #8e44ad);
+            border-bottom: 2px solid #b52b70;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffe6f2;
+            text-decoration: underline;
+        }
+
+        /* JUDUL */
+        .judul {
+            padding: 35px 20px 30px 20px;
+            text-align: center;
+        }
+
+        .judul h1 {
+            font-size: 36px;
+            font-weight: bold;
+            margin: 0;
+            color: #8e44ad;
+        }
+
+        /* FORM CONTACT */
+        .contact-box {
+            width: 70%;
+            margin: 20px auto 40px auto;
+            border: 2px solid #d63384;
+            border-radius: 12px;
+            padding: 25px;
+            background-color: #fff7fb;
+            box-shadow: 0 3px 10px rgba(214, 51, 132, 0.2);
+        }
+
+        /* LABEL */
+        .contact-box label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #8e44ad;
+        }
+
+        /* INPUT */
+        .contact-box input[type="text"],
+        .contact-box textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #d63384;
+            border-radius: 6px;
+            font-family: Arial, sans-serif;
+            margin-bottom: 20px;
+            background-color: white;
+        }
+
+        .contact-box input[type="text"]:focus,
+        .contact-box textarea:focus {
+            outline: none;
+            border: 2px solid #8e44ad;
+        }
+
+        /* MEDIA SOSIAL */
+        .media-sosial {
+            border: 1px solid #e5a4c0;
+            background-color: #ffe6f2;
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .media-sosial ul {
+            margin: 5px 0;
+        }
+
+        .media-sosial li {
+            margin: 8px 0;
+        }
+
+        .media-sosial a {
+            color: #d63384;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .media-sosial a:hover {
+            color: #8e44ad;
+            text-decoration: underline;
+        }
+
+        /* TOMBOL */
+        .tombol {
+            text-align: center;
+        }
+
+        input[type="submit"] {
+            background: linear-gradient(90deg, #d63384, #8e44ad);
+            color: white;
+            border: none;
+            padding: 12px 35px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            opacity: 0.85;
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <!-- style -->
+        <nav>
+            <a href="Home.html">Home</a>
+            <a href="PRODUK.html">Product</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+
+        <!-- JUDUL -->
+        <div class="judul">
+            <h1>Contact Me</h1>
+        </div>
+
+
+        <!-- FORM -->
+        <form action="#" class="contact-box">
+
+            <!-- NAMA -->
+            <label>Nama</label>
+
+            <input type="text"
+                   value="Ninda Syahfutri"
+                   readonly>
+
+
+            <!-- NO CONTACT -->
+            <label for="number">
+                No Contact
+            </label>
+
+            <input type="text"
+                   id="number"
+                   name="number"
+                   placeholder="Masukkan nomor kontak">
+
+
+            <!-- MEDIA SOSIAL -->
+            <label>
+                Media Sosial
+            </label>
+
+            <div class="media-sosial">
+
+                <ul>
+
+                    <li>
+                        <a href="https://www.instagram.com/nnd_syhftriw"
+                           target="_blank">
+                            Instagram
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.tiktok.com/@ninda.syahfutri25"
+                           target="_blank">
+                            TikTok
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- PESAN -->
+            <label for="pesan">
+                Pesan
+            </label>
+
+            <textarea
+                id="pesan"
+                name="pesan"
+                rows="8"
+                placeholder="Tulis pesan kamu di sini..."></textarea>
+
+
+            <!-- TOMBOL -->
+            <div class="tombol">
+
+                <input type="submit"
+                       value="Kirim">
+
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
+

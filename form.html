@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Formulir Pendaftaran</h1>
+    <form action="#">
+      <!-- inputan text -->
+      <label for="#">Firs Name</label><br />
+      <input type="text" /> <br />
+      <br />
+      <label for="#">Last Name</label> <br />
+      <input type="text" /> <br />
+      <br />
+
+      <!-- input radio -->
+       <label for="#">Jenis Kelamin:</label><br/>
+       <input type="radio" name="jk" />
+       <label for="#">Perempuan</label><br />
+       <input type="radio" name="jk" />
+       <label for="#">Laki-laki</label><br /><br />
+
+       <!-- input file  -->
+        <label for="file">Upload File:</label><br />
+        <input type="file" /> <br /><br />
+        <!-- selectarea -->
+         <label for="">Desa Tinggal:</label><br />
+         <select name="desa" id="">
+          <option value="bengkalis">Bengkalis</option>
+          <option value="bantan">Bantan</option>
+          <option value="siakkecil">Siak Kecil</option>
+          <option value="pambang">Pambang</option>
+          <option value="kelapapati">Kelapapati</option>
+          <option value="wonosari">Wonosari</option><br />
+         </select><br /><br />
+
+        <!-- tombol tanggal -->
+         <label for="tanggal">Tanggal Lahir:</label><br />
+         <input type="date"/><br /><br />
+
+         <!-- textarea -->
+          <label for="alamat">Alamat Lengkap:</label><br />
+          <textarea name="" id="" rows="10" cols="50"></textarea><br /><br />
+
+          <label for="password">Password</label><br />
+          <input type="password" id="password"/><br /><br />
+
+          <!-- tombol submit -->
+           <input type="submit" value="Kirim" />
+           <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
